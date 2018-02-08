@@ -53,10 +53,12 @@ States = {
 
 			}
 			else if(player.tries == 0){
-				console.log('Its Over', player.selectWord.chosenWord);
+				console.log('Its Over your word was:', player.selectWord.chosenWord);
+				//States.startGame();
 
 			}else{
 				console.log(player.selectWord.wordReveal());
+				//States.startGame();
 			}
 		
 

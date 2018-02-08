@@ -20,10 +20,11 @@ function Word(chosenWord) {
 
     //Current word reveal 
     this.letSolved = function() {
-        this.beenFound = this.abcArray.every(function(letter) {
-            return letter.appear; // "appear" is defind in Letter.js
-        });
-        return this.beenFound; //true
+        if (this.abcArray.every(function(letter) {
+            return letter.appear === true; // "appear" is defind in Letter.js
+
+        }));
+        return this.beenFound = true; //true
 
     };
     //if guessLetter matches Letter, the letter should be displayed

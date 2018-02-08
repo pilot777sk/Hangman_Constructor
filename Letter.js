@@ -10,7 +10,7 @@ var Letter = function(lttr) {
     this.appear = false;
 
     this.letterReveal = function() {
-        if (this.lttr == ' ') {
+        if (this.lttr === ' ') {
             this.appear = true;
             return '  ';
         }
